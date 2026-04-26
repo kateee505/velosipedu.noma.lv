@@ -1,76 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #00b4db, #0083b0);
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 /* Карточка */
-.container {
+.card {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 25px;
+    width: 340px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Заголовок */
 h1 {
     margin-bottom: 10px;
-    color: #333;
+    color: #222;
 }
 
 p {
-    margin-bottom: 20px;
-    color: #666;
+    color: #555;
+    margin-bottom: 15px;
 }
 
-/* Поля */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 select, input {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 8px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
     border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-/* Фокус */
-select:focus, input:focus {
-    outline: none;
-    border-color: #00b4db;
 }
 
 /* Кнопка */
 button {
     width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg, #00b4db, #0083b0);
-    color: white;
+    margin-top: 15px;
+    padding: 10px;
     border: none;
-    border-radius: 8px;
+    background-color: #2e7d32;
+    color: white;
     font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #0083b0, #005f73);
+    background-color: #1b5e20;
 }
 
 /* Результат */
 #result {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 15px;
     font-weight: bold;
 }
