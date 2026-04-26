@@ -1,20 +1,31 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Velosipēdu noma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<div class="container">
-    <h1>🚴 Аренда велосипедов</h1>
-    <p>Выберите велосипед и укажите количество дней</p>
+<div class="card">
+    <h1>🚴 Velosipēdu noma</h1>
+    <p>Izvēlies velosipēdu un dienu skaitu</p>
 
+    <label>Velosipēda veids:</label>
     <select id="bike">
-        <option value="10">Городской — 10€</option>
-        <option value="15">Горный — 15€</option>
-        <option value="20">Электро — 20€</option>
+        <option value="10">Pilsētas velo – 10€ / dienā</option>
+        <option value="15">Kalnu velo – 15€ / dienā</option>
+        <option value="20">Elektriskais velo – 20€ / dienā</option>
     </select>
 
-    <input id="days" type="number" placeholder="Количество дней">
+    <label>Dienu skaits:</label>
+    <input type="number" id="days" min="1" placeholder="Ievadi dienas">
 
-    <button onclick="calc()">Рассчитать</button>
+    <button id="btn">Aprēķināt</button>
 
     <div id="result"></div>
 </div>
 
+<script src="script.js"></script>
 </body>
+</html>
